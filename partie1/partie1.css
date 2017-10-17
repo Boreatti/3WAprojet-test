@@ -1,0 +1,11 @@
+
+
+html,body{
+
+  background:  url('img/bgPartie1-anim.gif') no-repeat ;
+      background-size: cover;
+    background-position: 100% 100%;
+  /*background-size: 100% 100%*/
+
+
+}
