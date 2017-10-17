@@ -1,5 +1,7 @@
 # 3WAprojet
-Projet pour validation de formation de la 3WA.Explication du projet : 
+Projet pour validation de formation de la 3WA.
+
+Explication du projet : 
 c'est un récit dans un univers fantastique, découpé en cinq parties, celles-ci accessibles via l'interaction des éléments du décor d'une scène illustrée. Chaque partie correspond à un lieu, illustré en arrière-plan. On accède aux chapitres de l'histoire sur ces différents écrans. Les chapitres sont gérés en base de données (titre + image + corps). Actuellement ce sont des chapitres test.Ce projet est aujourd'hui en cours de développement. À terme, il sera mis en ligne. 
 
 Langages utilisés :
