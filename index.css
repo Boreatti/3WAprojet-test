@@ -194,8 +194,9 @@ audio{
 /*    SCENE 1 : PRESENTATION                         */
 /*-----------------------------------------------------------*/
 .scene1{
-  width: 100%;
+  width: 1000px;
   height: 600px;
+  margin: 0 auto;
 }
 .containerTexteIntro{
   width: 255px;
@@ -249,9 +250,23 @@ h2{
   z-index: 1;
 }
 
+h3{
+   width: 1000px;
+  margin: 0 auto;
+  display: block;
+  font: normal 40px 'Bahiana', sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7591b), to(#00052d));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
 #eldinnPlanete{
   width: 500px;
-  margin-left: 255px;
+  margin-left: 250px;
   position: relative;
   margin-top: -640px;
 }
@@ -290,151 +305,21 @@ h2{
 /*-----------------------------------------*/
 /*    SCENE 2 : SYSTEME                       */
 /*-----------------------------------------------------------*/
-.scene2{
+.containerScene2{
   width: 100%;
-  height: 4260px;
-  margin-top: -400px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.containHyperspace{
-  width: 100%;
-  padding-top: 500px;
-  position: relative;
-}
-.wall{
-  /*background: url(imgIntro/medioHalo-V3.png);*/
+    background-image: url("imgIntro/fondPortail.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  display: none;
+  background-position: 100%;
 }
-.scene{
-  display: inline-block;
-  vertical-align: middle;
-  perspective: 5px;
-  perspective-origin: 50% 50%;
-  position: relative;
-}
-
-.wrap{
-  position: absolute;
-  width: 1500px; /* <--------------- Pour le responsive changer cette valeur !*/
-  height: 1500px;
-  left: -500px;
-  top: -500px;
-  transform-style: preserve-3d;
-  animation-fill-mode: forwards;
-}
-
-.wrap:nth-child(2){
-  animation-delay: 6s;
-}
-.wall {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  animation-delay: 0;
-  z-index: 1;
-}
-
-.wrap:nth-child(2) .wall {
-  animation-delay: 6s;
-}
-
-.wall-right {
-  transform: rotateY(90deg) translateZ(500px);
-}
-
-.wall-left {
-  transform: rotateY(-90deg) translateZ(500px);
-}
-
-.wall-top {
-  transform: rotateX(90deg) translateZ(500px);
-}
-
-.wall-bottom {
-  transform: rotateX(-90deg) translateZ(500px);
-}
-
-.wall-back {
-  transform: rotateX(180deg) translateZ(500px);
-}
-@keyframes move {
-  0%{
-    transform: translateZ(-500px) rotate(0deg);
-  }
-  100%{
-    transform: translateZ(500px) rotate(0deg);
-  }
-}
-
-@keyframes fade {
-  0%{
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
-
-
-
-.repereApparition{
-  position: absolute;
-}
-.A1{
-  margin-top: 400px;
-}
-.A2{
-  margin-top: 800px;
-}
-.A3{
-  margin-top: 1200px;
-}
-.A4{
-  margin-top: 1900px;
-}
-
-
-
-.blocPlaneteS3{
+.scene2{
   width: 1000px;
+  /*height: 100%;*/
+  /*margin-top: -400px;*/
   margin: 0 auto;
-  position: relative;
-  margin-top: -2500px;
-}
-.planeteS3{
-  width: 1000px;
-  height: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
+  text-align: center;
+  /*overflow: visible;*/
 
-#repereFixeSysteme{
-  position: absolute;
-}
-
-
-#hideEldinn{
-  margin-top: 103px;
-  position: absolute;
-}
-#showEldinn{
-  margin-top: 99px;
-  position: absolute;
-}
-
-.planete{
-  width: 0px;
-  position: absolute;
 }
 
 
@@ -444,7 +329,8 @@ h2{
   position: relative;
 }
 .bulleTxt{
-  width: 10%;
+  width: 12%;
+  position: absolute;
   background-color: #C4B1E2;
   padding: 15px 15px;
   border-radius: 15px;
@@ -452,14 +338,14 @@ h2{
   z-index: 1;
 }
 #bulle1{
-  margin: 6% 0% 0% 32%;
+  margin: 1% 0% 0% 25%;
 }
 #bulle2{
-  margin: 2% 0% 0% 54%;
+  margin: 6% 0% 0% 45%;
 
 }
 #bulle3{
-  margin: 7% 0% 0% 42%;
+  margin: 14% 0% 0% 68%;
 
 }
 #bulle4{
@@ -467,7 +353,7 @@ h2{
 
 }
 #repereBulle1{
-    position: absolute;
+  position: absolute;
 }
 #repereBulle2{
   padding-top: 5%;
@@ -489,19 +375,19 @@ h2{
 }
 
 #bulle5{
-  margin: 0% 0% 0% 23%;
+  margin: 2% 0% 0% 23%;
 
 }
 #bulle6{
-  margin: -3% 0% 0% 42%;
+  margin: 2% 0% 0% 42%;
 
 }
 #bulle7{
-  margin: -2.5% 0% 0% 62%;
+  margin: 2% 0% 0% 62%;
 
 }
 #bulle8{
-  margin: 4% 0% 0% 42%;
+  margin: 18% 0% 0% 42%;
   
 }
 
@@ -519,48 +405,55 @@ h2{
   
 }
 #repereBulle8{
-  margin-top: -500px;
+  margin-top: -940px;
   position: absolute;
   
 }
 
 
-.blocPortail{
-  /*opacity: 0;*/
+.containerBulleTxt2{
   width: 100%;
-  height: 1000px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.fondPortail{
-  /*position: absolute;*/
-  width: 100%;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: block;
-}
-.containerPortail{
-  width: 100%;
-  height: 600px;
+  /*height: 100%;*/
   margin: 0 auto;
   display: block;
   position: relative;
-  margin-top: -1210px;
+  /*margin-top: -1210px;*/
 }
 
-#fondPortailImg{
+
+/*#reperePortailFixe{
+  margin-top: -1500px;
+  position: absolute;
+}*/
+
+/*.blocPortail a{
+  margin-top: 285px;
+  margin-left: 47%;
+  display: block;
+  position: absolute;
   opacity: 0;
-  /*position: absolute;*/
-  width: 100%;
+}*/
+/*#reperePortalFadeIn{
   margin-top: -200px;
-  height: 140%;
+  position: absolute;
 }
-
-#fondPortailAnim{
-  width: 90%;
-  height: 90%;
+*/
+#portail{
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 30%;
+  z-index: 1;
+}
+#lienAccueil{
+  position: absolute;
+  margin-top: 30%;
+  font-size: 20px;
+}
+/*#bgPortail{
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 30%;
+  position: absolute;
   animation: animationBreath ease-in 2s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
@@ -576,64 +469,17 @@ h2{
   -ms-animation: animationBreath ease-in 2s;
   -ms-animation-iteration-count: infinite;
   -ms-transform-origin: 50% 50%;
-}
-#reperePortailFixe{
-  margin-top: -1500px;
-  position: absolute;
-}
+}*/
 
-#portail{
-  opacity: 0;
-  position: absolute;
-  height: 100%;
-  margin-left: -360px;
-  z-index: 1;
-}
-.blocPortail a{
-  margin-top: 285px;
-  margin-left: 47%;
-  display: block;
-  position: absolute;
-  opacity: 0;
-}
-#reperePortalFadeIn{
-    margin-top: -200px;
-  position: absolute;
-}
-
-svg{
-  display: none;
+#fondPortail{
   width: 100%;
-  height: 100%;
-}
-
-.containerElement{
   position: absolute;
-  width: 100%;
-  height: 100%;
-}
-#element1{
-  position: absolute;
-  width: 45%;
-  height: 100%;
-  top: -300px;
-  right: 0;
-}
-#element2{
-  position: absolute;
-  width: 67%;
-  height: 100%;
-  transform: rotate(18deg);
-  top: -400px;
-  left: -300px;
+  background-image: url("imgIntro/fondPortail.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 
 }
-#element3{
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  bottom: -130;
-}
+
 
 /*-----------------------------------------*/
 /*   ANIMATIONS                      */
@@ -755,63 +601,11 @@ svg{
   }
   } 
 
-
-
 /*-----------------------------------------*/
 /*   RESPONSIVE                       */
 /*-----------------------------------------------------------*/
 @media screen and (max-width: 1500px) {
-  #portail{
-    width: 40%;
-    height: 80%;
-    margin-left: -290px;
-  }
-
-#bulle5{
-  margin: 0% 0% 0% 14%;
-
-}
-#bulle6{
-  margin: -70px 0% 0% 39%;
-
-}
-#bulle7{
-  margin: -50px 0% 0% 64%;
-
-}
-#bulle8{
-  margin: 4% 0% 0% 39%;
-  
-}
-.containerPortail{
-  margin-top: -1100px;
-}
-.bulleTxt{
-  width: 18%;
-}
-
-#element1{
-  width: 48%;
-}
-#element2{
-  width: 91%;
-  top:-295px;
-  left:-562px;
-  transform: rotate(6deg);
-}
-#element3{
-  width: 90%;
-  left: -307px;
-  bottom: -134px;
-}
-
-}
-
-@media screen and (min-width: 1500px) {
-  .containerElement{
-    margin-top: 80px;
-  }
-  #portail{
-    margin-top: 50px;
+  #lienAccueil{
+    margin-top: 50%;
   }
 }
